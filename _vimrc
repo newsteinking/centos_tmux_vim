@@ -31,7 +31,7 @@ Plugin 'taglist.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'davidhalter/jedi-vim'
-Plugin 'https://github.com/edkolev/tmuxline.vim.git'
+"Plugin 'https://github.com/edkolev/tmuxline.vim.git'
 "Plugin 'file:///home/gmarik/path/to/plugin'
 "Plugin 'user/L9', {'name': 'newL9'}
 
@@ -112,12 +112,12 @@ highlight colorcolumn ctermbg=200
 " url : https://github.com/altercation/vim-colors-solarized
 """"""""""""""""""""""""""""""
 syntax enable
-if has('gui_running')
-    set background=brblue
-else
-    set background=dark
-endif
-" set background=dark
+"if has('gui_running')
+"    set background=brblue
+"else
+"    set background=dark
+"endif
+set background=dark
 colorscheme solarized
 
 
