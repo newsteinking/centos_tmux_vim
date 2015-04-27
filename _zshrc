@@ -1,7 +1,7 @@
 ################################################################################
 # created date : Wed, Apr 22, 2015  8:27:16 PM
 # file : .zshrc
-# desc : Jou Sung-Shik's .zshrc for babun environment.
+# desc : sean's .zshrc for centos  environment.
 ################################################################################
 
 # Path to your oh-my-zsh installation.
@@ -94,6 +94,12 @@ source $ZSH/oh-my-zsh.sh
 ################################################################################
 #export LANG="ko_KR.UTF-8"
 #export LC_ALL="ko_KR.UTF-8"
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+
+
+
 
 source ${HOME}/.alias 
 source ${HOME}/.alias_on_site 2> /dev/null

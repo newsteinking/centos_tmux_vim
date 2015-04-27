@@ -7,6 +7,7 @@ echo "install powerline font  ===================================>>>"
 yum install -y git wget 
 
 git clone https://github.com/powerline/fonts.git
+
 mkdir -p /usr/share/fonts/powerline
 cp -R ./fonts/*  /usr/share/fonts/powerline
 fc-cache -f /usr/share/fonts/powerline/DejaVuSansMono

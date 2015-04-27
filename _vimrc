@@ -18,6 +18,7 @@ call vundle#begin()
 Plugin 'bling/vim-airline'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'The-NERD-tree' 
 Plugin 'L9'
 Plugin 'https://github.com/wincent/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -77,7 +78,7 @@ set history=700
 set undolevels=700
 syntax on
 
-set guifont=Liberation\ Mono\ for\ Powerline\ 10 
+" set guifont=Liberation\ Mono\ for\ Powerline\ 10 
 
 
 set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
