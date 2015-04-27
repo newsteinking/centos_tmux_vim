@@ -4,7 +4,7 @@ echo "***This Script is for CentOS 6.5********** "
 
 echo "install powerline font  ===================================>>>"
 
-yum install -y pyton-pip
+yum install -y python-pip
 yum install -y git wget 
 
 git clone https://github.com/powerline/fonts.git
