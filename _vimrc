@@ -97,7 +97,7 @@ highlight Pmenu guibg=brown gui=bold
 """"""""""""""""""""""""""""""
 " for Python convention
 """"""""""""""""""""""""""""""
-set colorcolumn=80
+" set colorcolumn=80
 highlight colorcolumn ctermbg=200
 
 

@@ -27,6 +27,11 @@ cp ~/.vim/bundle/solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/colo
 echo "install vim plugin     ===================================>>>"
 vim +PluginInstall +qall
 
+echo "install vim plugin fo vi     ===================================>>>"
+
+cp ~/.vim/bundle/SrcExpl/plugin/*.vim ~/.vim/plugin/
+cp ~/.vim/bundle/taglist.vim/plugin/*.vim ~/.vim/plugin/
+cp ~/.vim/bundle/Trinity/plugin/*.vim ~/.vim/plugin/ 
 
 
 echo "Good Coding Life for You !!!!"
