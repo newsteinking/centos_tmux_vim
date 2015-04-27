@@ -4,20 +4,12 @@ echo "***This Script is for CentOS 6.5********** "
 
 echo "install powerline font  ===================================>>>"
 
-yum install -y python-pip
 yum install -y git wget 
 
 git clone https://github.com/powerline/fonts.git
 cd fonts
 ./install.sh
 cd ..
-
-echo "install powerline   ===================================>>>"
-git clone https://github.com/powerline/powerline.git
-cd powerline
-python setup.py
-cd ..
-
 
 
 echo "copy all ~/       ===================================>>>"
@@ -48,15 +40,7 @@ cp ~/.vim/bundle/solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/colo
 echo "install vim plugin     ===================================>>>"
 vim +PluginInstall +qall
 
-echo "install vim plugin fo vi     ===================================>>>"
 
-mkdir -p ~/.vim/plugin 
-
-cp ~/.vim/bundle/Align/plugin/*.vim ~/.vim/plugin/
-cp ~/.vim/bundle/L9/plugin/*.vim ~/.vim/plugin/
-cp ~/.vim/bundle/Trinity/plugin/*.vim ~/.vim/plugin/ 
-cp ~/.vim/bundle/SrcExpl/plugin/*.vim ~/.vim/plugin/
-cp ~/.vim/bundle/taglist.vim/plugin/*.vim ~/.vim/plugin/
 
 
 
