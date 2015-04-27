@@ -51,8 +51,14 @@ cp ~/.vim/bundle/solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/colo
 echo "install vim plugin     ===================================>>>"
 vim +PluginInstall +qall
 
+echo "*****************************************************************"
+echo "                                                                 "
+echo "                                                                 "
 echo "Please reconnect your terminal ============================>> !!!!"
-
+echo "                                                                 "
+echo "                                                                 "
+echo "                                                                 "
+echo "*****************************************************************"
 
 
 echo "Good Coding Life for You !!!!"
