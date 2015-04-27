@@ -50,9 +50,14 @@ vim +PluginInstall +qall
 
 echo "install vim plugin fo vi     ===================================>>>"
 
+mkdir -p ~/.vim/plugin 
+
+cp ~/.vim/bundle/Align/plugin/*.vim ~/.vim/plugin/
+cp ~/.vim/bundle/L9/plugin/*.vim ~/.vim/plugin/
+cp ~/.vim/bundle/Trinity/plugin/*.vim ~/.vim/plugin/ 
 cp ~/.vim/bundle/SrcExpl/plugin/*.vim ~/.vim/plugin/
 cp ~/.vim/bundle/taglist.vim/plugin/*.vim ~/.vim/plugin/
-cp ~/.vim/bundle/Trinity/plugin/*.vim ~/.vim/plugin/ 
+
 
 
 echo "Good Coding Life for You !!!!"
