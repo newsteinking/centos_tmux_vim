@@ -1,5 +1,19 @@
 #!/bin/bash
 
+echo "***This Script is for CentOS 6.5********** "
+
+echo "install powerline font  ===================================>>>"
+
+yum install -y pyton-pip
+yum install -y git wget 
+
+cd ~/
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+
+
+
 echo "copy all ~/       ===================================>>>"
 cp _alias ~/.alias
 cp _minttyrc ~/.minttyrc
@@ -13,6 +27,7 @@ echo "copy all complete ===================================>>>"
 
 echo "yum  install tmux  ===================================>>>"
 yum install -y  tmux
+
 
 
 echo "clone solarized   ===================================>>>"
