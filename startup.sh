@@ -48,6 +48,9 @@ cp _zshrc ~/.zshrc
 echo "clone vim vundle   ===================================>>>"
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+echo "install tmuxline    ===================================>>>"
+git clone https://github.com/edkolev/tmuxline.vim ~/.vim/bundle/tmuxline.vim
+
 
 echo "copy solarized.vim to colors dir   ===================================>>>"
 cp ~/.vim/bundle/solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/
