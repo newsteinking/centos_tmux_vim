@@ -7,10 +7,16 @@ echo "install powerline font  ===================================>>>"
 yum install -y pyton-pip
 yum install -y git wget 
 
-cd ~/
 git clone https://github.com/powerline/fonts.git
 cd fonts
 ./install.sh
+cd ..
+
+echo "install powerline   ===================================>>>"
+git clone https://github.com/powerline/powerline.git
+cd powerline
+python setup.py
+cd ..
 
 
 
