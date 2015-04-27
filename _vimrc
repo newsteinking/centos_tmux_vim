@@ -77,6 +77,9 @@ set history=700
 set undolevels=700
 syntax on
 
+set guifont=Liberation\ Mono\ for\ Powerline\ 10 
+
+
 set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 set nocindent
 
@@ -108,7 +111,12 @@ highlight colorcolumn ctermbg=200
 " url : https://github.com/altercation/vim-colors-solarized
 """"""""""""""""""""""""""""""
 syntax enable
-set background=dark
+if has('gui_running')
+    set background=brblue
+else
+    set background=dark
+endif
+" set background=dark
 colorscheme solarized
 
 
