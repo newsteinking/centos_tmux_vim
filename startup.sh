@@ -26,6 +26,8 @@ echo "copy all complete ===================================>>>"
 echo "yum  install tmux  ===================================>>>"
 yum install -y  tmux
 
+echo "install oh-my-zsh   ===================================>>>"
+wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 
 
 echo "clone solarized   ===================================>>>"
