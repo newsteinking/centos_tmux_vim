@@ -129,3 +129,31 @@ echo " * FREE: $FREE"
 # SCM Breeze for Git : https://github.com/ndbroadbent/scm_breeze
 ################################################################################ 
 [ -s "${HOME}/.scm_breeze/scm_breeze.sh" ] && source "${HOME}/.scm_breeze/scm_breeze.sh"
+
+
+################################################################################
+# sean export 
+################################################################################ 
+##sean
+## sean pc proxy 
+export http_proxy=http://10.3.0.172:8080
+export https_proxy=http://10.3.0.172:8080
+
+
+PATH=$PATH:/home/sean/utils/tceetree_1_0_1_binary_linux64
+PATH=$PATH:/usr/local/src/eclipse/
+PATH=$PATH:/usr/local/src/SublimeText2
+PATH=$PATH:/home/sean/works/python/statsd/statsd
+PATH=$PATH:/home/sean/corkscrew/bin
+export PATH
+
+##java
+export JAVA_HOME=/usr/local/src/jdk1.8.0_31
+
+export PATH=$JAVA_HOME/bin:$PATH
+
+export CLASSPATH=$CLASSPATH:$JAVA_HOME/jre/lib/ext:$JAVA_HOME/lib/tools.jar
+
+export CLASSPATH=.:$CLASSPATH
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
