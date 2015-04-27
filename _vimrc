@@ -31,7 +31,7 @@ Plugin 'taglist.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'davidhalter/jedi-vim'
-"Plugin 'file:///root/centos_tmux_vim/command-t'
+Plugin 'https://github.com/edkolev/tmuxline.vim.git'
 "Plugin 'file:///home/gmarik/path/to/plugin'
 "Plugin 'user/L9', {'name': 'newL9'}
 
