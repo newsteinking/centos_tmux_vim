@@ -19,7 +19,7 @@ Plugin 'bling/vim-airline'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
-Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'https://github.com/wincent/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'Align'
 Plugin 'AutoComplPop'
@@ -30,6 +30,7 @@ Plugin 'taglist.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'davidhalter/jedi-vim'
+"Plugin 'file:///root/centos_tmux_vim/command-t'
 "Plugin 'file:///home/gmarik/path/to/plugin'
 "Plugin 'user/L9', {'name': 'newL9'}
 
