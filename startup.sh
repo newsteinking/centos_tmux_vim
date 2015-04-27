@@ -26,12 +26,20 @@ echo "copy all complete ===================================>>>"
 echo "yum  install tmux  ===================================>>>"
 yum install -y  tmux
 
+echo "yum  install zsh   ===================================>>>"
+yum install -y zsh
+
+chsh -s /bin/zsh
+
 echo "install oh-my-zsh   ===================================>>>"
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 
 
 echo "clone solarized   ===================================>>>"
 git clone https://github.com/altercation/solarized.git ~/.vim/bundle/solarized
+
+cp _zshrc ~/.zshrc
+
 
 echo "clone vim vundle   ===================================>>>"
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -43,7 +51,7 @@ cp ~/.vim/bundle/solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/colo
 echo "install vim plugin     ===================================>>>"
 vim +PluginInstall +qall
 
-
+echo "Please reconnect your terminal ============================>> !!!!"
 
 
 
