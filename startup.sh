@@ -48,8 +48,6 @@ cp _zshrc ~/.zshrc
 echo "clone vim vundle   ===================================>>>"
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-echo "install tmuxline    ===================================>>>"
-git clone https://github.com/edkolev/tmuxline.vim ~/.vim/bundle/tmuxline.vim
 
 
 echo "copy solarized.vim to colors dir   ===================================>>>"
@@ -58,16 +56,23 @@ cp ~/.vim/bundle/solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/colo
 echo "install vim plugin     ===================================>>>"
 vim +PluginInstall +qall
 
-echo "*****************************************************************"
-echo "                                                                 "
-echo "                                                                 "
-echo "Please reconnect your terminal ============================>> !!!!"
-echo "                                                                 "
-echo " if you connect with  mRemoteNG or putty                         "
-echo " install in windowk powerline font                               "
-echo "  https://github.com/powerline/fonts.git                         "
-echo "                                                                 "
-echo "                                                                 "
+echo "install tmuxline    ===================================>>>"
+git clone https://github.com/edkolev/tmuxline.vim ~/.vim/bundle/tmuxline.vim
+
+
+
+echo "*****************************************************************   "
+echo "                                                                    "
+echo "                                                                    "
+echo "Please reconnect your terminal ============================>> !!!!  "
+echo "                                                                    "
+echo " if you connect with  mRemoteNG or putty                            "
+echo " install in windowk powerline font                                  "
+echo "  https://github.com/powerline/fonts.git                            "
+echo " and change putty-window-appearance-font-Dejavu Sans for powerline  "
+echo " change your LANG as en_US.UTF8 in linux /etc/sysconfig/i18n        "
+echo " and reboot, or export export LANG="en_US.UTF8" ; export LANG=C     "
+echo "                                                                    "
 echo "*****************************************************************"
 
 
