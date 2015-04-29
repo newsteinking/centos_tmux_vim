@@ -48,3 +48,64 @@ alias ta='tmux attach -t '
 alias tn='tmux new -s '
 alias tl='tmux ls'
 
+# for yum 
+
+alias ys="yum search"                       # search package
+alias yp="yum info"                         # show package info
+alias yl="yum list"                         # list packages
+alias ygl="yum grouplist"                   # list package groups
+alias yli="yum list installed"              # print all installed packages
+alias ymc="yum makecache"                   # rebuilds the yum package list
+
+alias yu="sudo yum update"                  # upgrate packages
+alias yi="sudo yum install"                 # install package
+alias ygi="sudo yum groupinstall"           # install package group
+alias yr="sudo yum remove"                  # remove package
+alias ygr="sudo yum groupremove"            # remove pagage group
+alias yrl="sudo yum remove --remove-leaves" # remove package and leaves
+alias yc="sudo yum clean all"               # clean cache
+
+#for docker 
+
+# ------------------------------------
+# Docker alias and function
+# ------------------------------------
+
+# Get latest container ID
+alias dl="docker ps -l -q"
+
+# Get container process
+alias dps="docker ps"
+
+# Get process included stop container
+alias dpa="docker ps -a"
+
+# Get images
+alias di="docker images"
+
+# Get container IP
+alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+
+# Run deamonized container, e.g., $dkd base /bin/echo hello
+alias dkd="docker run -d -P"
+
+# Run interactive container, e.g., $dki base /bin/bash
+alias dki="docker run -i -t -P"
+
+# Stop all containers
+dstop() { docker stop $(docker ps -a -q); }
+
+# Remove all containers
+drm() { docker rm $(docker ps -a -q); }
+
+# Stop and Remove all containers
+alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
+
+# Remove all images
+dri() { docker rmi $(docker images -q); }
+
+# Dockerfile build, e.g., $dbu tcnksm/test 
+dbu() { docker build -t=$1 .; }
+
+# Show all alias related docker
+dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
