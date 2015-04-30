@@ -165,3 +165,18 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
 # zsh backspace not working,define as follows 
 ################################################################################ 
 export TERM=xterm-256color
+
+################################################################################
+# Disable globbing on the remote path.
+################################################################################
+# Disable globbing on the remote path.
+ alias scp='noglob scp_wrap'
+ function scp_wrap {
+   local -a args
+   local i
+     for i in "$@"; do case $i in
+      (*:*) args+=($i) ;;
+      (*) args+=(${~i}) ;;
+      esac; done
+      command scp "${(@)args}"
+    }
