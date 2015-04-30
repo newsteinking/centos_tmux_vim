@@ -109,3 +109,12 @@ dbu() { docker build -t=$1 .; }
 
 # Show all alias related docker
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+
+# ------------------------------------
+# centos 7 systemctl command
+# ------------------------------------
+## centos 7 systemctl command
+alias st="systemctl "
+alias stl="systemctl list-unit-files --type=service"
+alias ste="systemctl list-unit-files --type=service |grep enabled"
+alias std="systemctl list-unit-files --type=service |grep disabled"
