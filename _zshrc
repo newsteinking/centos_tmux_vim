@@ -146,11 +146,8 @@ export http_proxy=http://10.3.0.172:8080
 export https_proxy=http://10.3.0.172:8080
 
 
-PATH=$PATH:/home/sean/utils/tceetree_1_0_1_binary_linux64
 PATH=$PATH:/usr/local/src/eclipse/
-PATH=$PATH:/usr/local/src/SublimeText2
-PATH=$PATH:/home/sean/works/python/statsd/statsd
-PATH=$PATH:/home/sean/corkscrew/bin
+
 export PATH
 
 ##java
@@ -163,3 +160,8 @@ export CLASSPATH=$CLASSPATH:$JAVA_HOME/jre/lib/ext:$JAVA_HOME/lib/tools.jar
 export CLASSPATH=.:$CLASSPATH
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
+
+################################################################################
+# zsh backspace not working,define as follows 
+################################################################################ 
+export TERM=xterm-256color
