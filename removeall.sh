@@ -2,9 +2,9 @@
 
 echo "***This Script is for CentOS 6.5 ,7.0********** "
 
-echo "remove git wget   ===================================>>>"
+#echo "remove git wget   ===================================>>>"
 
-yum remove  -y git wget 
+#yum remove  -y git wget 
 
 #git clone https://github.com/powerline/fonts.git
 
