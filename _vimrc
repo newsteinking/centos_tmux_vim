@@ -73,7 +73,9 @@ set ignorecase
 set smartcase
 set wildmenu
 set ruler
-set background=light
+" set background=light
+set background=dark
+colorscheme solarized 
 set history=700
 set undolevels=700
 syntax on
