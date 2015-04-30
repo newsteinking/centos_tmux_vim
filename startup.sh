@@ -60,7 +60,23 @@ vim +PluginInstall +qall
 echo "install tmuxline    ===================================>>>"
 git clone https://github.com/edkolev/tmuxline.vim ~/.vim/bundle/tmuxline.vim
 
+echo "install ctags, cscope    ===================================>>>"
+yum install -y ctags cscope 
+echo "ansi C header indexing    ===================================>>>"
+ctags -R /usr/include
 
+echo "copy mkscope /usr/bin    ===================================>>>"
+mv ./mkscope /usr/bin
+chmod 755 /usr/bin/mkscope 
+echo "*****************************************************************   "
+echo " 1. your source dir & ctags -R                                      "
+echo " 2..vimrc add following                                             "
+echo " 3.set tags=./tags,/usr/include/tags                                "
+echo "  ctl+] next  ctl+t first                                            "
+echo " 1.your sour dir & mkscope       & ctl+d                             "
+echo " 2.add .vimrc  cs add /home/sean/works/cscope.put                    "
+echo " 3.vim command mode:cs find symbol  or :cs enter                     "
+echo "*****************************************************************   "
 
 echo "*****************************************************************   "
 echo "                                                                    "

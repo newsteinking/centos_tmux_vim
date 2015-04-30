@@ -212,3 +212,25 @@ let g:SrcExpl_gobackKey = "<SPACE>"
 
 map <F3> :tnext^M
 map <F2> :tprevious^M
+
+" ============= ctags,cscope =============”
+
+" ====ctags ==========
+" add your source directory *************** 
+set tags=./tags,/usr/include/tags
+
+" ====cscope==========
+set csprg=/usr/bin/cscope
+set csto=0
+set cst
+set nocsverb
+
+" add your source directory ***************
+
+if filereadable("./cscope.out")
+   cs add cscope.out
+else
+   cs add /home/share/omap-linux/cscope.out
+endif
+set csverb
+
