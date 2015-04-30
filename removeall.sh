@@ -1,16 +1,16 @@
 #!/bin/bash
 
-echo "***This Script is for CentOS 6.5********** "
+echo "***This Script is for CentOS 6.5 ,7.0********** "
 
-echo "install powerline font  ===================================>>>"
+echo "remove git wget   ===================================>>>"
 
-yum install -y git wget 
+yum remove  -y git wget 
 
-git clone https://github.com/powerline/fonts.git
+#git clone https://github.com/powerline/fonts.git
 
-mkdir -p /usr/share/fonts/powerline
-cp -R ./fonts/*  /usr/share/fonts/powerline
-fc-cache -f /usr/share/fonts/powerline/DejaVuSansMono
+#mkdir -p /usr/share/fonts/powerline
+#cp -R ./fonts/*  /usr/share/fonts/powerline
+#fc-cache -f /usr/share/fonts/powerline/DejaVuSansMono
 ##cd fonts
 ##./install.sh
 ##cd ..

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "***This Script is for CentOS 6.5********** "
+echo "***This Script is for CentOS 6.5, 7.0********** "
 
 echo "install powerline font  ===================================>>>"
 
