@@ -234,3 +234,11 @@ else
 endif
 set csverb
 
+" ============= Fuzzy Finder ============= "
+
+map <Leader>ff <ESC>:FufCoverageFile!<CR>
+map <Leader>fb <ESC>:FufBuffer!<CR>
+map <Leader>fd <ESC>:FufDir!<CR>
+ 
+" 파일명 탐색시 제외할 파일 이름 패턴 지정
+"let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp|class)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
