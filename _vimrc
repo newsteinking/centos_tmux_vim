@@ -235,10 +235,27 @@ endif
 set csverb
 
 " ============= Fuzzy Finder ============= "
+nnoremap fb :FufBuffer!
+nnoremap fm :FufMruFile!
+nnoremap ff :FufCoverageFile!
 
-map <Leader>ff <ESC>:FufCoverageFile!<CR>
-map <Leader>fb <ESC>:FufBuffer!<CR>
-map <Leader>fd <ESC>:FufDir!<CR>
+"map <Leader>ff <ESC>:FufCoverageFile!<CR>
+"map <Leader>fb <ESC>:FufBuffer!<CR>
+"map <Leader>fd <ESC>:FufDir!<CR>
  
 " 파일명 탐색시 제외할 파일 이름 패턴 지정
 "let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp|class)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
+
+"let g:FuzzyFinderOptions = { 'Base':{}, 'Buffer':{}, 'File':{}, 'Dir':{}, 'MruFile':{}, 'MruCmd':{}, 'FavFile':{}, 'Tag':{}, 'TaggedFile':{}}
+" 특정 파일 제외
+"let g:FuzzyFinderOptions.File.excluded_path = '\v\~$|\.o$|\.exe$|\.bak$|\.swp$|\.class$|\.settings$|CVS|((^|[/\\])\.[/\\]$)'
+" 대소문자 구분하기 (0 : 대소문자 구분, 1 : 대소문자 구분 안함)
+"let g:FuzzyFinderOptions.Base.ignore_case = 0
+
+" 현재 디렉토리 이하에서 파일명으로 검색해서 읽어오기
+"map <Leader>ff <ESC>:FuzzyFinderFile \*\*\/<CR>
+
+" 버퍼 목록에서 검색해서 이동하기
+"map <Leader>fb <ESC>:FuzzyFinderBuffer<CR>
+
+
