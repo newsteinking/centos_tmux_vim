@@ -172,5 +172,43 @@ augroup vimrc_autocmds
     autocmd FileType python match Excess /\%120v.*/
     autocmd FileType python set nowrap
 augroup END
+" ============= Like a Source Insight =============”
+set mouse=a
 
+" === Taglist ===
+" // The switch of the Taglist
+nmap <F10> :TlistToggle<CR>
 
+let Tlist_Ctags_Cmnd = "/usr/bin/ctags"
+let Tlist_Inc_Winwidth = 0
+let Tlist_Exit_OnlyWindow = 0
+let Tlist_Auto_Open = 0
+let Tlist_Use_Left_Window = 1
+
+" === NERDTree ===
+"  // The switch of the NERDTree
+nmap <F9> :NERDTreeToggle<CR>
+
+let NERDTreeWinPos = "right"
+
+" === Source explorer ===
+" // The switch of the Source Explorer
+nmap <F8> :SrcExplToggle<CR>
+
+"// Map the keys below to jump from one window to another:
+nmap <C-H> <C-W>h
+nmap <C-J> <C-W>j
+nmap <C-K> <C-W>k
+nmap <C-L> <C-W>l
+
+let g:SrcExpl_winHeight = 8
+let g:SrcExpl_refreshTime = 100
+let g:SrcExpl_isUpdateTags = 0
+
+" // Set “Enter” key to jump into the exact definition context
+let g:SrcExpl_jumpKey = "<ENTER>"
+" // Set “Space” key for back from the definition context
+let g:SrcExpl_gobackKey = "<SPACE>"
+
+map <F3> :tnext^M
+map <F2> :tprevious^M
