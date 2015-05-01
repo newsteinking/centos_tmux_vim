@@ -22,7 +22,10 @@ reference from  https://github.com/liks79/dotfiles.git
 
 or removeall.sh 
 
+** Tmux tips
+sync tmux panes
 
+Ctl+B or Ctl+A  shift+:  setw synchronize-panes  ( tab will show ) 
 
 
 
