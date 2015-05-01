@@ -121,7 +121,11 @@ syntax enable
 "endif
 set background=dark
 colorscheme solarized
+"========================================
+" set visualbell on /off 
 
+autocmd GUIEnter * set vb t_vb= " for your GUI
+autocmd VimEnter * set vb t_vb=
 
 
 """"""""""""""""""""""""""""""
