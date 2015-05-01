@@ -29,7 +29,8 @@ echo "copy all complete ===================================>>>"
 
 echo "yum  install libevent tmux  ===================================>>>"
 yum install -y libevent-devel
-yum install -y  tmux
+rpm -Uvh http://pkgs.repoforge.org/tmux/tmux-1.6-1.el6.rf.x86_64.rpm
+
 
 echo "yum  install zsh   ===================================>>>"
 yum install -y zsh
