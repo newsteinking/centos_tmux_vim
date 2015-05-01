@@ -27,6 +27,9 @@ sync tmux panes
 
 Ctl+B or Ctl+A  shift+:  setw synchronize-panes  ( tab will show ) 
 
+Ctl+B or Ctl+A  c :create new windows
+                n : next window
+                p : previosu window
 
 
 written by sean
