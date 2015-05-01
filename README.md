@@ -13,7 +13,8 @@ reference from  https://github.com/liks79/dotfiles.git
 
    cd centos_tmux_vim
    
-   chmod 755 startup.sh 
+   chmod 755 startupcent6.sh   //CentOS 6
+   chmod 755 startupcent7.sh   //CentOS 7
    and 
    chmod 755 removeall.sh
    
