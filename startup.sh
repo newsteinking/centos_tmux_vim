@@ -27,7 +27,8 @@ rm -rf ~/startup.sh
 
 echo "copy all complete ===================================>>>"
 
-echo "yum  install tmux  ===================================>>>"
+echo "yum  install libevent tmux  ===================================>>>"
+yum install -y libevent-devel
 yum install -y  tmux
 
 echo "yum  install zsh   ===================================>>>"
