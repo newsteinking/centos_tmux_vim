@@ -47,6 +47,7 @@ alias td='tmux detach'
 alias ta='tmux attach -t '
 alias tn='tmux new -s '
 alias tl='tmux ls'
+alias tk='tmux kill-window -t '
 
 # for yum 
 
