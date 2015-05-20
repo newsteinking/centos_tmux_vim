@@ -144,7 +144,8 @@ echo " * FREE: $FREE"
 ## sean pc proxy 
 export http_proxy=http://10.3.0.172:8080
 export https_proxy=http://10.3.0.172:8080
-
+## backspace not working 
+export TERM=xterm-256color
 
 PATH=$PATH:/usr/local/src/eclipse/
 
